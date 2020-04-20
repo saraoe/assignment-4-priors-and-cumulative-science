@@ -1,7 +1,9 @@
 ---
 title: "Assignment 4 - Applying meta-analytic priors"
-author: "Riccardo Fusaroli"
-output: html_document
+author: "Studygroup: Matilde, Aske, Rebecca, Emil, Sara"
+output:  
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -106,7 +108,7 @@ summary(MA_m1)
 MA_mean <- fixef(MA_m1)[[1]]
 MA_se <- fixef(MA_m1)[[2]]
 
-MA_heterogeneity = 0.33
+MA_heterogeneity = 0.32
 
 ```
 
@@ -253,7 +255,6 @@ loo_model_weights(NS_m0, NS_m1)
 loo_compare(NS_m0, NS_m1)
 
 ```
-
 
 Step 4: Now re-run the model with the meta-analytic prior
 - Evaluate model quality. Describe and plot the estimates. 
